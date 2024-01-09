@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform task</title>
+    <style>
+        body{
+            background-color: black;
+        }
+        .monday{
+            background-color: black;
+            padding: 5px;
+        }
+    #Transform1:checked~.item{
+        transform: none;
+
+    }
+    #Transform2:checked~.item{
+        transform: rotate(10deg);
+    }
+    #Transform3:checked~.item{
+        transform: rotate(45deg);
+    }
+    #Transform4:checked~.item{
+        transform: rotateX(45deg);
+    }
+    #Transform5:checked~.item{
+        transform: rotateX(100deg);
+    }
+    #Transform6:checked~.item{
+        transform: rotateY(45deg);
+    }
+    #Transform7:checked~.item{
+        transform: rotateY(80deg);
+    }
+    #Transform8:checked~.item{
+        transform: skew(20deg, 20deg);
+    }
+    #Transform9:checked~.item{
+        transform: skew(30deg, 30deg);
+    }
+    #Transform10:checked~.item{
+        transform: skewX(30deg);
+    }
+    #Transform11:checked~.item{
+        transform: skew(40deg);
+    }
+    #Transform11:checked~.item{
+        transform: rotateX(45deg);
+    }
+    #Transform12:checked~.item{
+        transform: translate(20deg, 10deg);
+    }
+    #Transform13:checked~.item{
+        transform: translate(20deg, 20deg);
+
+    }
+    #Transform14:checked~.item{
+        transform: scale(2,2);
+    }
+    #Transform15:checked~.item{
+        transform: scale(2,3);
+    }
+    #Transform16:checked~.item{
+        transform: matrix(0.866,0.7,-0.8,0.866,0,0);
+    }
+    #Transform17:checked~.item{
+        transform: matrix(0.586,0.8,-0.8,0.586,0,0);
+    }
+    #Transform18:checked~.item{
+        transform:matrix(0.586,0.8,-0.8,0.586,40,30)
+    }
+
+    button{
+        border-radius: 10px;
+        background: linear-gradient(to right, rgb(128, 49, 0), blue );
+        color: white;
+        font-weight: bold;
+    }
+    .item{
+        position: absolute;
+        top: 15%;
+        left: 70%;
+    }
+
+    </style>
+</head>
+<body>
+    <input type="radio" name="crl" id="Transform1">
+    <button>transform: none;</button><br>
+    <input type="radio" name="crl" id="Transform2">
+    <button>transform: rotate(10deg);</button><br>
+    <input type="radio" name="crl" id="Transform3">
+    <button>transform: rotate(45deg);</button><br>
+    <input type="radio" name="crl" id="Transform4">
+    <button>transform: rotateX(45deg);</button><br>
+    <input type="radio" name="crl" id="Transform5">
+    <button>transform: rotateX(100deg);</button><br>
+    <input type="radio" name="crl" id="Transform6">
+    <button>transform: rotateY(45deg);</button><br>
+    <input type="radio" name="crl" id="Transform7">
+    <button>transform: rotateY(80deg);</button><br>
+    <input type="radio" name="crl" id="Transform8">
+    <button>transform: skew(20deg,20deg);</button><br>
+    <input type="radio" name="crl" id="Transform9">
+    <button>transform: skew(30deg,30deg);</button><br>
+    <input type="radio" name="crl" id="Transform10">
+    <button>transform: skewX(30deg);</button><br>
+    <input type="radio" name="crl" id="Transform11">
+    <button>transform: skewX(40deg);</button><br>
+    <input type="radio" name="crl" id="Transform12">
+    <button>transform: translate(20px,10px);</button><br>
+    <input type="radio" name="crl" id="Transform13">
+    <button>transform: translate(20px,20px);</button><br>
+    <input type="radio" name="crl" id="Transform14">
+    <button>transform: scale(2,2);</button><br>
+    <input type="radio" name="crl" id="Transform15">
+    <button>transform: scale(2,3);</button><br>
+    <input type="radio" name="crl" id="Transform16">
+    <button>transform: matrix(0.866,0.7,-0.8,0.866,0,0);</button><br>
+    <input type="radio" name="crl" id="Transform17">
+    <button>transform: matrix(0.586,0.8,-0.8,0.586,0,0);</button><br>
+    <input type="radio" name="crl" id="Transform18">
+    <button>transform: matrix(0.586,0.8,-0.8,0.586,40,30);</button>
+    
+    <div class="item">
+    
+            <div class="item1">
+                <img src="./football.webp" width="300" height="250">
+            </div>
+    </div>
+</body>
+</html>
